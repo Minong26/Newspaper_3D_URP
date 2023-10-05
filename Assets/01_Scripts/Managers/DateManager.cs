@@ -25,7 +25,7 @@ public class DateManager : MonoBehaviour
     public TextMeshProUGUI time_text_1;
     private bool tab_pop_bool;
     public int time;
-    private SaveLoad saveload;
+    public SaveLoad saveload;
     public GameObject game_tab_pop;
     
     public GameObject game_1_btn;

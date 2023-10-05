@@ -580,7 +580,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: game_1_choise
         m_Mode: 1
@@ -592,7 +592,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: list_load
         m_Mode: 1
@@ -1422,12 +1422,63 @@ MonoBehaviour:
   m_GameObject: {fileID: 410087039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a8eaefae19b874ba67945df88c6fe5, type: 3}
+  m_Script: {fileID: 11500000, guid: 35d4c0066e84d8d4dbdaf94e1ba9ce43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondPerRealTimeSecond: 144000
+  secondPerRealTimeSecond: 0
   nightFogDensity: 0
   fogDensityCalc: 0
+--- !u!1 &417574696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 417574698}
+  - component: {fileID: 417574697}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &417574697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417574696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9975b3e4881156247b946884234325e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_1: 0
+  time_2: 0
+  time_3: 0
+  datamanager: {fileID: 1371019143}
+  now_game: 0
+  game_tab_img: {fileID: 0}
+  game_pop: {fileID: 0}
+--- !u!4 &417574698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417574696}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1359.3694, y: 535.40356, z: 556.698}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &434796338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,7 +2138,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: visit_mode
         m_Mode: 1
@@ -2233,7 +2284,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: game_2_choise
         m_Mode: 1
@@ -2245,7 +2296,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: list_load
         m_Mode: 1
@@ -2681,7 +2732,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1037095038}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Save
         m_Mode: 1
@@ -2705,7 +2756,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1371019141}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: go_main
         m_Mode: 1
@@ -2764,59 +2815,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1037095040}
-  - component: {fileID: 1037095039}
-  - component: {fileID: 1037095038}
+  - component: {fileID: 1037095041}
   m_Layer: 0
-  m_Name: save
+  m_Name: SaveLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1037095038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037095037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9975b3e4881156247b946884234325e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time_1: 0
-  time_2: 0
-  time_3: 0
-  now_game: 0
-  game_tab_img: {fileID: 0}
-  game_pop: {fileID: 0}
---- !u!114 &1037095039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037095037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca7060adf0aebc64c81bc493f4db5e45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time_text_1: {fileID: 0}
-  time: 0
-  game_tab_pop: {fileID: 799560}
-  game_1_btn: {fileID: 202089474}
-  game_2_btn: {fileID: 733021371}
-  game_3_btn: {fileID: 1676421780}
-  load_list_pop: {fileID: 317999877}
-  choise_game_1: 0
-  choise_game_2: 0
-  choise_game_3: 0
-  delete_game_num: 0
-  alert: {fileID: 0}
-  alert_text: {fileID: 0}
-  comfirm_mode: 
 --- !u!4 &1037095040
 Transform:
   m_ObjectHideFlags: 0
@@ -2832,6 +2838,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037095041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037095037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87498be3688d75c44a63ed8957eb9106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time_1: 0
+  time_2: 0
+  time_3: 0
+  now_game: 0
 --- !u!1 &1044729302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2990,7 +3012,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1371019141}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: go_main
         m_Mode: 1
@@ -3561,33 +3583,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371019142}
-  - component: {fileID: 1371019141}
   - component: {fileID: 1371019143}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: DateManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1371019141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371019140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9975b3e4881156247b946884234325e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time_1: 0
-  time_2: 0
-  time_3: 0
-  now_game: 0
-  game_tab_img: {fileID: 0}
-  game_pop: {fileID: 0}
 --- !u!4 &1371019142
 Transform:
   m_ObjectHideFlags: 0
@@ -3615,8 +3618,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7060adf0aebc64c81bc493f4db5e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time_1: 0
+  time_2: 0
+  time_3: 0
+  secondPerRealTimeSecond: 0
+  nightFogDensity: 0
+  fogDensityCalc: 0
   time_text_1: {fileID: 0}
   time: 0
+  saveload: {fileID: 0}
   game_tab_pop: {fileID: 1044729302}
   game_1_btn: {fileID: 202089474}
   game_2_btn: {fileID: 733021371}
@@ -3629,6 +3639,7 @@ MonoBehaviour:
   alert: {fileID: 1541913697}
   alert_text: {fileID: 0}
   comfirm_mode: 
+  now_game: 0
 --- !u!1 &1417647023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,7 +4088,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: comfirm_con
         m_Mode: 1
@@ -4358,7 +4369,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: game_3_choise
         m_Mode: 1
@@ -4370,7 +4381,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1037095039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DateManager, Assembly-CSharp
         m_MethodName: list_load
         m_Mode: 1
@@ -4786,7 +4797,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1371019141}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Save
         m_Mode: 1
@@ -4992,3 +5003,4 @@ SceneRoots:
   - {fileID: 1037095040}
   - {fileID: 1371019142}
   - {fileID: 1195135935}
+  - {fileID: 417574698}
