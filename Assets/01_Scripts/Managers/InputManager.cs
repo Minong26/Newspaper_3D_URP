@@ -2,25 +2,44 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    enum PlayerState
-    {
+    private static InputManager _instance;
 
-    }
+    public static InputManager Instance { get { return _instance; } }
 
-    private void Update()
+    private PlayerControls playerControls;
+
+    private void Awake()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (_instance != null && _instance != this)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(Camera.main.transform.position, ray.direction * 100, Color.red, 1.0f);
-
-            LayerMask mask = LayerMask.GetMask("Bookshelf") | LayerMask.GetMask("Table");
-
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100f))
-            {
-                Debug.Log($"{hit.collider.gameObject.name}");
-            }
+            Destroy(this.gameObject);
+        }else
+        {
+            _instance = this;
         }
+        playerControls = new PlayerControls();
+        Cursor.visible = false;
     }
+
+    private void OnEnable()
+    {
+        playerControls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerControls.Disable();
+    }
+
+    public Vector2 GetPlayerMovement()
+    {
+        return playerControls.Player.Move.ReadValue<Vector2>();
+    }
+
+    public Vector2 GetMouseDelta()
+    {
+        return playerControls.Player.Look.ReadValue<Vector2>();
+    }
+
+
 }

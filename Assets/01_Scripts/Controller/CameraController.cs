@@ -4,9 +4,11 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] private Vector2 turn;
     [SerializeField] private float sensitivity = .5f;
+    [SerializeField] float moveSpeed = 1f;
 
-    enum CameraPosition
+    enum CameraPositions
     {
+        Idle,
         Couch,
         Table,
         Bookshelf
@@ -18,7 +20,7 @@ public class CameraController : MonoBehaviour
         Stay
     }
 
-    private CameraPosition _position = CameraPosition.Couch;
+    private CameraPositions _position = CameraPositions.Idle;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -28,15 +30,20 @@ public class CameraController : MonoBehaviour
     {
         switch (_position)
         {
-            case CameraPosition.Couch:
+            case CameraPositions.Idle:
+                RotateCamera();
+                MoveCamera();
+                break;
+
+            case CameraPositions.Couch:
                 RotateCamera();
                 break;
             
-            case CameraPosition.Table:
+            case CameraPositions.Table:
                 Cursor.lockState = CursorLockMode.Confined;
                 break;
 
-            case CameraPosition.Bookshelf:
+            case CameraPositions.Bookshelf:
                 Cursor.lockState = CursorLockMode.Confined;
                 break;
         }
@@ -47,5 +54,13 @@ public class CameraController : MonoBehaviour
         turn.x += Input.GetAxis("Mouse X") * sensitivity;
         turn.y += Input.GetAxis("Mouse Y") * sensitivity;
         transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
+    }
+
+    private void MoveCamera()
+    {
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        transform.Translate(new Vector3(h, 0, v).normalized * Time.deltaTime * moveSpeed);
     }
 }

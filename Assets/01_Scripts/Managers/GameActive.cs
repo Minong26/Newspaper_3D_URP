@@ -72,7 +72,6 @@ public class GameActive : MonoBehaviour
         saveload = GameObject.Find("saveload").GetComponent<SaveLoad>();
         saveload.Load();
         list_load();
-        SceneManager.sceneLoaded += LoadedsceneEvent;
         StartCoroutine("time_coru", 1f/6f);
     }
 
@@ -125,33 +124,33 @@ public class GameActive : MonoBehaviour
         }
     }
 
-    public void comfirm_con()
-    {
-        if (comfirm_mode == "삭제")
-        {
-            delete_func();
-        }else if (comfirm_mode == "입장")
-        {
-            if (choise_game_1)
-            {
-                saveload.now_game = 1;
-                SceneManager.LoadScene(0);
-            }
-            else if(choise_game_2)
-            {
-                saveload.now_game =2;
-                SceneManager.LoadScene(0);
-            }else if(choise_game_3)
-            {
-                saveload.now_game =3;
-                SceneManager.LoadScene(0);
-            }
-            else
-            {
+    //public void comfirm_con()
+    //{
+    //    if (comfirm_mode == "삭제")
+    //    {
+    //        delete_func();
+    //    }else if (comfirm_mode == "입장")
+    //    {
+    //        if (choise_game_1)
+    //        {
+    //            saveload.now_game = 1;
+    //            SceneManager.LoadScene(0);
+    //        }
+    //        else if(choise_game_2)
+    //        {
+    //            saveload.now_game =2;
+    //            SceneManager.LoadScene(0);
+    //        }else if(choise_game_3)
+    //        {
+    //            saveload.now_game =3;
+    //            SceneManager.LoadScene(0);
+    //        }
+    //        else
+    //        {
                 
-            }
-        }
-    }
+    //        }
+    //    }
+    //}
     
     
     public void GameStart()
@@ -183,7 +182,7 @@ public class GameActive : MonoBehaviour
                 saveload.now_game = 3;
             }
         }
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
     }
     
     public void delete_mode()

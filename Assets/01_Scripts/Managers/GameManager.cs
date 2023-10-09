@@ -4,40 +4,19 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int time_1;
-    public int time_2;
-    public int time_3;
-
-    public DateManager dataManager;
-
-    public int now_game;
-    public Sprite game_tab_img;
-    public GameObject game_pop;
+    private void Awake()
+    {
+        SceneManager.LoadScene("Lobby");
+    }
 
     void Start()
     {
-        dataManager = GameObject.Find("Canvas").GetComponent<DateManager>();
+        GameObject gameManager = GameObject.Find("@Managers");
+        if (gameManager == null)
+        {
+            gameManager = new GameObject("@Managers");
+            gameManager.AddComponent<GameManager>();
+        }
+        DontDestroyOnLoad(gameManager);
     }
-
-    public void click_sound()
-    {
-        GameObject.Find("GameManager").GetComponent<AudioSource>().Play();
-    }
-   
-
-    public void go_main()
-    {
-        SceneManager.LoadScene(1);
-    }
-
-    public void go_lobby()
-    {
-        SceneManager.LoadScene(2);
-    }
-
-    public void go_game()
-    {
-        SceneManager.LoadScene(0);
-    }
-
 }

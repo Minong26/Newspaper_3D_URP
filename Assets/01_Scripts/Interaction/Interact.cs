@@ -22,14 +22,18 @@ public class Interact : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(Camera.main.transform.position, ray.direction * 100, Color.red, 1.0f);
 
+        Vector3 cameraPos = Camera.main.transform.position;
+
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 3f))
+        LayerMask layerMask = LayerMask.GetMask("Interactable");
+        if (Physics.Raycast(ray, out hit, 2.5f, layerMask))
         {
-            Debug.Log(hit.point);
             interactArea.transform.position = hit.point;
         }
-        //else
-            //interactArea.transform.position = Camera.main.transform.localposition + new Vector3(0, 0, 2f);
+        else
+        {
+            interactArea.transform.position = new Vector3(cameraPos.x, cameraPos.y, cameraPos.z);
+        }
     }
 
     private void InteractPanel(GameObject interactObj)
