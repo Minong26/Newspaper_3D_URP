@@ -16,9 +16,9 @@ public class PauseUI : UIManager
 
     void Update()
     {
-        if (_status == uiStatus.Popup && Input.GetKeyDown(KeyCode.Escape))
-        {
-            ClearUI();
-        }
+        //if (_status == uiStatus.Popup && Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    ClearUI();
+        //}
     }
 }
