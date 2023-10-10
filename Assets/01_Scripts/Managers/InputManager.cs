@@ -3,7 +3,6 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     private static InputManager _instance;
-
     public static InputManager Instance { get { return _instance; } }
 
     private PlayerControls playerControls;
@@ -11,14 +10,11 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         if (_instance != null && _instance != this)
-        {
             Destroy(this.gameObject);
-        }else
-        {
+        else
             _instance = this;
-        }
+
         playerControls = new PlayerControls();
-        Cursor.visible = false;
     }
 
     private void OnEnable()
@@ -40,6 +36,4 @@ public class InputManager : MonoBehaviour
     {
         return playerControls.Player.Look.ReadValue<Vector2>();
     }
-
-
 }

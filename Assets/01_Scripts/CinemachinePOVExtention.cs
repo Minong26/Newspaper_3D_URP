@@ -16,6 +16,8 @@ public class CinemachinePOVExtention : CinemachineExtension
     protected override void Awake()
     {
         _inputManager = InputManager.Instance;
+        if (startingRotation == null)
+            startingRotation = transform.localRotation.eulerAngles;
         base.Awake();
     }
 
@@ -25,9 +27,6 @@ public class CinemachinePOVExtention : CinemachineExtension
         {
             if (stage == CinemachineCore.Stage.Aim)
             {
-                if (startingRotation == null)
-                    startingRotation = transform.localRotation.eulerAngles;
-                
                 Vector2 deltaInput = _inputManager.GetMouseDelta();
                 //startingRotation.x == Rotateion axis is x, it means rotate up and down
                 startingRotation.x += deltaInput.x * verticalSpeed * Time.deltaTime;

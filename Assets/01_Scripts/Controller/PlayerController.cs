@@ -5,8 +5,11 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 playerVelocity;
+    [SerializeField]
     private float playerSpeed = 2.0f;
+    [SerializeField]
     private float gravityValue = -9.81f;
+
     private InputManager inputManager;
     private Transform cameraTransform;
 

@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    enum Events
+    public enum Events
     {
         None,
         Table,
         BookShelf01,
         BookShelf02,
-
+        Bed,
+        Chair
     }
 }

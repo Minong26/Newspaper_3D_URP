@@ -36,7 +36,7 @@ public class DateManager : MonoBehaviour
     public int now_game;
     private void LoadedsceneEvent(Scene scene, LoadSceneMode mode)
     {
-        list_load();
+        //list_load();
     }
     IEnumerator time_coru()
     {
@@ -77,8 +77,7 @@ public class DateManager : MonoBehaviour
         tab_pop_bool = false;
 
         comfirm_mode = "";
-        saveload.Load();
-        list_load();
+        //list_load();
         StartCoroutine("time_coru", 1f/6f);
     }
 
@@ -189,44 +188,44 @@ public class DateManager : MonoBehaviour
             saveload.time_3 = -1;
         }
         
-        list_load();
+        //list_load();
     }
    
-    public void list_load()
-    {
-        if (saveload.time_1 == -1)
-        {
-            game_1_btn.GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            game_1_btn.GetComponent<Button>().interactable = true;
-        }
+    //public void list_load()
+    //{
+    //    if (saveload.time_1 == -1)
+    //    {
+    //        game_1_btn.GetComponent<Button>().interactable = false;
+    //    }
+    //    else
+    //    {
+    //        game_1_btn.GetComponent<Button>().interactable = true;
+    //    }
         
-        if (saveload.time_2 == -1)
-        {
-            game_2_btn.GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            game_2_btn.GetComponent<Button>().interactable = true;
-        }
+    //    if (saveload.time_2 == -1)
+    //    {
+    //        game_2_btn.GetComponent<Button>().interactable = false;
+    //    }
+    //    else
+    //    {
+    //        game_2_btn.GetComponent<Button>().interactable = true;
+    //    }
         
-        if (saveload.time_3 == -1)
-        {
-            game_3_btn.GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            game_3_btn.GetComponent<Button>().interactable = true;
-        }
-    }
+    //    if (saveload.time_3 == -1)
+    //    {
+    //        game_3_btn.GetComponent<Button>().interactable = false;
+    //    }
+    //    else
+    //    {
+    //        game_3_btn.GetComponent<Button>().interactable = true;
+    //    }
+    //}
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !tab_pop_bool)
         {
             game_tab_pop.SetActive(true);
-            list_load();
+            //list_load();
             tab_pop_bool = true;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && tab_pop_bool)

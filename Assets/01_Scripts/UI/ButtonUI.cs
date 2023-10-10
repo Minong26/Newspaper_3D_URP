@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonUI : UIManager
+public class ButtonUI : MonoBehaviour
 {
     public void ApplicationQuit()
     {
@@ -10,6 +10,11 @@ public class ButtonUI : UIManager
 
     public void LoadGameScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Game");
+    }
+
+    public void LoadLobbyScene()
+    {
+        SceneManager.LoadScene("Lobby");
     }
 }
