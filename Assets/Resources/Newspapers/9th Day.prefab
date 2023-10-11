@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 4421547669909035401, guid: 2173ed52cd64d2a4090e9b97b706484e,
         type: 3}
       propertyPath: m_Name
-      value: Newspaper Canvas Variant
+      value: 9th Day
       objectReference: {fileID: 0}
     - target: {fileID: 7103678368609117984, guid: 2173ed52cd64d2a4090e9b97b706484e,
         type: 3}

@@ -111,7 +111,7 @@ PrefabInstance:
     - target: {fileID: 9179252755609598190, guid: 9c32ae2ef3549cd4087d956d201a260e,
         type: 3}
       propertyPath: m_Name
-      value: Newspaper Canvas Variant
+      value: 10th Day
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

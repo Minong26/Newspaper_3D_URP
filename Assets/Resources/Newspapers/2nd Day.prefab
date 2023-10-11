@@ -18,6 +18,16 @@ PrefabInstance:
       propertyPath: m_text
       value: "\uC720\uBA85 \uC544\uC774\uB3CC \uC774\uC544 \uC0AC\uB9DD"
       objectReference: {fileID: 0}
+    - target: {fileID: 1068999764382748843, guid: 5970501fb60dcac4fbec5f0270355a2f,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068999764382748843, guid: 5970501fb60dcac4fbec5f0270355a2f,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 1379489054972789868, guid: 5970501fb60dcac4fbec5f0270355a2f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -153,7 +163,7 @@ PrefabInstance:
     - target: {fileID: 5543304452494179013, guid: 5970501fb60dcac4fbec5f0270355a2f,
         type: 3}
       propertyPath: m_Name
-      value: Newspaper Canvas Variant
+      value: 2nd Day
       objectReference: {fileID: 0}
     - target: {fileID: 6302272712569538864, guid: 5970501fb60dcac4fbec5f0270355a2f,
         type: 3}

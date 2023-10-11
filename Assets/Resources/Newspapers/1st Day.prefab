@@ -18,6 +18,21 @@ PrefabInstance:
       propertyPath: m_text
       value: "\uBE4C\uC2A8 \uAC00 \uC624\uB9AC\uB18D\uC7A5 \uC9D1\uB2E8 \uD3D0\uC0AC"
       objectReference: {fileID: 0}
+    - target: {fileID: 1013110562040978056, guid: c32d1ac664cf8864db2c5f79708ff837,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013110562040978056, guid: c32d1ac664cf8864db2c5f79708ff837,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013110562040978056, guid: c32d1ac664cf8864db2c5f79708ff837,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 1440728379276250703, guid: c32d1ac664cf8864db2c5f79708ff837,
         type: 3}
       propertyPath: m_Pivot.x

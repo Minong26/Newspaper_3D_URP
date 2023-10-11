@@ -5534,8 +5534,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69681920ae5b1b34f81b9da6fa8851da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactPanel: {fileID: 0}
-  interactItem: {fileID: 0}
 --- !u!4 &2077938050
 Transform:
   m_ObjectHideFlags: 0

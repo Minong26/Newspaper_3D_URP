@@ -108,10 +108,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1217548610550511107, guid: 49def27d332ad524585a2c0b457dd913,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217548610550511107, guid: 49def27d332ad524585a2c0b457dd913,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217548610550511107, guid: 49def27d332ad524585a2c0b457dd913,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 5971075578464377965, guid: 49def27d332ad524585a2c0b457dd913,
         type: 3}
       propertyPath: m_Name
-      value: Newspaper Canvas Variant
+      value: 8th Day
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
