@@ -1,4 +1,4 @@
-using Cinemachine;
+ï»¿using Cinemachine;
 using TMPro;
 using UnityEngine;
 
@@ -45,11 +45,11 @@ public class Interact : MonoBehaviour
         {
             interactablePopup.SetActive(true);
             if (hit.transform.name == "BookShelf02")
-                interactableItemDescription.text = "Áö³­ ½Å¹® Ã£±â";
+                interactableItemDescription.text = "ì§€ë‚œ ë‰´ìŠ¤ ì½ê¸°";
             else if (hit.transform.name == "Couch")
-                interactableItemDescription.text = "ÀÇÀÚ¿¡ ¾É±â";
+                interactableItemDescription.text = "ì†ŒíŒŒì— ì•‰ê¸°";
             else if (hit.transform.name == "Bed")
-                interactableItemDescription.text = "ÀáÀÚ±â";
+                interactableItemDescription.text = "ì ìê¸°";
         }
         else
         {
