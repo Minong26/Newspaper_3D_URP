@@ -11,7 +11,22 @@ PrefabInstance:
     - target: {fileID: 188302246161586897, guid: 6c1625a6ac3e7fc449d9d0d9ae41838c,
         type: 3}
       propertyPath: m_Name
-      value: Newspaper Canvas Variant
+      value: 5th Day
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658099143302820031, guid: 6c1625a6ac3e7fc449d9d0d9ae41838c,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658099143302820031, guid: 6c1625a6ac3e7fc449d9d0d9ae41838c,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658099143302820031, guid: 6c1625a6ac3e7fc449d9d0d9ae41838c,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 6725510446304879736, guid: 6c1625a6ac3e7fc449d9d0d9ae41838c,
         type: 3}

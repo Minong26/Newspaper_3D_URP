@@ -20,6 +20,21 @@ PrefabInstance:
       value: "\uBCF4\uC11D \uC2E4\uC740 \uB378\uB9AC\uD638 \uC120\uBC15 \uCE68\uBAB0
         20"
       objectReference: {fileID: 0}
+    - target: {fileID: 1013110562040978056, guid: c32d1ac664cf8864db2c5f79708ff837,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013110562040978056, guid: c32d1ac664cf8864db2c5f79708ff837,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013110562040978056, guid: c32d1ac664cf8864db2c5f79708ff837,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 1440728379276250703, guid: c32d1ac664cf8864db2c5f79708ff837,
         type: 3}
       propertyPath: m_Pivot.x
