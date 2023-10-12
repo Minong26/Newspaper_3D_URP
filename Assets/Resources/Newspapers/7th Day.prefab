@@ -108,6 +108,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3973003044398555330, guid: 175d8b40635259d408a767f1f5d5f17d,
+        type: 3}
+      propertyPath: m_text
+      value: "F\uC0AC \uBCF4\uC548 \uBB38\uC81C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6381837710229405585, guid: 175d8b40635259d408a767f1f5d5f17d,
+        type: 3}
+      propertyPath: m_text
+      value: " \uAD70\uC0AC \uBAA9\uC801\uC758 \uD751\uC0C9\uD654\uC57D\uC744 \uB300\uB7C9
+        \uC0DD\uC0B0\uD558\uB294 F\uC0AC \uACF5\uC7A5\uC774 \uBCF4\uC548 \uBB38\uC81C\uC5D0
+        \uCDE8\uC57D\uD558\uB2E4\uB294 \uC18C\uBB38\uC774\uB2E4. \uC775\uBA85\uC758
+        \uC81C\uBCF4\uC790\uB294 \uC774\uBBF8 \uC218\uCC28\uB840 \uC0DD\uC0B0\uD488\uC774
+        \uC678\uBD80\uB85C \uD758\uB7EC\uAC04 \uAC83\uC744 \uD655\uC778\uD558\uC600\uC73C\uBA70
+        \uC0C1\uBD80\uC5D0 \uBCF4\uACE0\uD588\uC73C\uB098 \uC544\uBB34\uB7F0 \uC870\uCE58\uAC00
+        \uCDE8\uD574\uC9C0\uC9C0 \uC54A\uC558\uB2E4\uACE0 \uBC1D\uD614\uB2E4.\n\n
+        \n\uBCF4\uC548 \uBB38\uC81C\uAC00 \uCDE8\uC57D\uD558\uB2E4\uACE0 \uBC1D\uD78C
+        \uBCF4\uC548 \uB2F4\uB2F9\uC790\uB4E4\uC740 \uC774\uBBF8 \uBE60\uC838\uB098\uAC04
+        \uBB3C\uD488\uC774 \uC788\uC744 \uC218 \uC788\uB2E4\uACE0 \uBC1D\uD614\uC9C0\uB9CC\r\nF\uC0AC\uC758
+        \uC0AC\uC7A5 \uD398\uB178\uC528\uB294 \uBCF4\uC548\uC0C1 \uC544\uBB34\uB7F0
+        \uBB38\uC81C\uAC00 \uC5C6\uC744\uAC83 \uC774\uB77C\uB294 \uC785\uC7A5\uC744
+        \uD45C\uD604\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+      objectReference: {fileID: 0}
     - target: {fileID: 8646471392194308268, guid: 175d8b40635259d408a767f1f5d5f17d,
         type: 3}
       propertyPath: m_Name

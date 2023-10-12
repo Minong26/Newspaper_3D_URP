@@ -6,13 +6,14 @@ public class UIManager : MonoBehaviour
     public GameObject pauseUI;
     public bool pauseUIOpened = false;
 
+    private CursorController _cursor;
     private Stack<GameObject> _uiStack = new Stack<GameObject>();
-
-    private GameManager _gameManager;
 
     private void Start()
     {
         GameObject uiManager = GameObject.Find("@Managers");
+        _cursor = GameObject.Find("@Controllers").GetComponent<CursorController>();
+
         if (uiManager == null)
         {
             uiManager = new GameObject("@Managers");
@@ -23,7 +24,6 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!pauseUIOpened)
@@ -31,10 +31,15 @@ public class UIManager : MonoBehaviour
                 pauseUI.SetActive(true);
                 _uiStack.Push(pauseUI);
                 pauseUIOpened = true;
+                Time.timeScale = 0f;
+
+                _cursor._sceneStatus = CursorController.SceneStatus.GamePaused;
             }
             else
             {
                 CloseCurrentUI();
+                _cursor._sceneStatus = CursorController.SceneStatus.GamePlayingAround;
+                Time.timeScale = 1.0f;
             }
         }
     }
@@ -60,5 +65,12 @@ public class UIManager : MonoBehaviour
     public void InteractUIControl()
     {
         
+    }
+
+    public void Return()
+    {
+        CloseCurrentUI();
+        _cursor._sceneStatus = CursorController.SceneStatus.GamePlayingAround;
+        Time.timeScale = 1.0f;
     }
 }

@@ -9,12 +9,6 @@ public class CursorController : MonoBehaviour
         GamePaused
     }
 
-    private void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
     public SceneStatus _sceneStatus = SceneStatus.GamePlayingAround;
     private void Update()
     {

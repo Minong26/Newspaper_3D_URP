@@ -13,12 +13,4 @@ public class PauseUI : UIManager
         pauseCanvas.SetActive(false);
         saveLoadCanvas.SetActive(false);
     }
-
-    void Update()
-    {
-        //if (_status == uiStatus.Popup && Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    ClearUI();
-        //}
-    }
 }

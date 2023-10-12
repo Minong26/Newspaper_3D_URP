@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00_Scenes/Game.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/00_Scenes/PrefabMaker.unity
+    guid: 657856098e02b6c4e8ef91f7fa250301
   m_configObjects: {}
