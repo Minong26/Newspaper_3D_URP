@@ -20,12 +20,12 @@ public class Interact : MonoBehaviour
     private void InteractAreaControl()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Debug.DrawRay(Camera.main.transform.position, ray.direction * 100, Color.red, 1.0f);
+        //Debug.DrawRay(Camera.main.transform.position, ray.direction * 100, Color.red, 1.0f);
 
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 3f))
         {
-            Debug.Log(hit.point);
+            //Debug.Log(hit.point);
             interactArea.transform.position = hit.point;
         }
         //else
